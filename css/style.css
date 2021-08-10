@@ -1,9 +1,9 @@
 :root{
     --blanco:#FFFFFF;
     --oscuro:#212121;
-    --primario:#FFC107;
-    --secundario:#0097A7;
-    --gris:#757575;
+    --primario:#f6b7a8;
+    --secundario:#cd4c77;
+    --gris:#1f1e1e;
     --grisClaro:#DFE9F3;
     /* --fuente-principal:3.8rem; */
 }
@@ -17,10 +17,12 @@ html{
 
 /*SCROLL SNAP*/
 
-.servicios,  .navegacion-principal, .formulario{
+.servici,  .navegacion-principal, .formulario, .sobremi1{
     scroll-snap-align: center;
     scroll-snap-stop: always;
 }
+
+
 
 *, *:before, *:after {
     box-sizing: inherit;
@@ -143,6 +145,8 @@ h1,h2,h3{
     background-color: var(--primario);
     color:var(--oscuro);
 }
+
+
 /* Hero */
 .hero{
     background-image: url(../img/hero.jpg);
@@ -174,7 +178,42 @@ h1,h2,h3{
 }
 
 
+/*Sobre mi*/
 
+.sobremi{
+    display:flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.sobremi-parrafo{
+    text-align: center;
+    margin: auto 5rem 3rem 5rem;
+    line-height: 2;
+}
+
+.fotoemil{
+    display:flex;
+    justify-content: center;
+    margin:3rem auto;
+}
+
+.fotoemil img{
+    height: 20rem;
+    width: 20rem;
+    /* los siguientes valores son independientes del tamaño del círculo */
+    background-repeat: no-repeat;
+    background-position: 50%;
+    border-radius: 50%;
+    background-size: 100% auto;
+}
+
+@media (min-width: 768px) {
+    .fotoemil img{
+        height: 20rem;
+        width: 20rem;
+    }
+}
 
 /* Servicios */
 
