@@ -17,7 +17,7 @@ html{
 
 /*SCROLL SNAP*/
 
-.servici,  .navegacion-principal, .formulario, .sobremi1{
+.servicios,  .navegacion-principal, .formulario, .sobremi1{
     scroll-snap-align: center;
     scroll-snap-stop: always;
 }
